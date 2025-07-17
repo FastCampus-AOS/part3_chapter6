@@ -12,11 +12,13 @@ import fastcampus.aos.part3.part3_chapter6.databinding.ActivityMainBinding
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding : ActivityMainBinding
+    private val listAdapter by lazy { ListAdapter() }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater).apply {
             setContentView(root)
+            recyclerView.adapter = listAdapter
         }
 
     }
