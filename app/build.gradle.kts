@@ -58,6 +58,8 @@ dependencies {
     implementation(libs.gson)
     implementation(libs.coroutine)
 
+    implementation(libs.paging3)
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
