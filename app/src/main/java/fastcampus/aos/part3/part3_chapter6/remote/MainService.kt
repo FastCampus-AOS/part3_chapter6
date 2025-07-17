@@ -1,4 +1,4 @@
-package fastcampus.aos.part3.part3_chapter6
+package fastcampus.aos.part3.part3_chapter6.remote
 
 import fastcampus.aos.part3.part3_chapter6.model.NetworkResponse
 import retrofit2.http.GET

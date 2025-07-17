@@ -5,6 +5,8 @@ import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
+import fastcampus.aos.part3.part3_chapter6.model.ListItem
+import fastcampus.aos.part3.part3_chapter6.remote.ListItemDeserializer
 import okhttp3.OkHttpClient
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
@@ -18,7 +20,12 @@ object RetrofitModule {
     @Provides
     @Singleton
     fun providesConverterFactory(): GsonConverterFactory =
-        GsonConverterFactory.create(GsonBuilder().create())
+        GsonConverterFactory.create(
+            GsonBuilder().registerTypeAdapter(
+                ListItem::class.java,
+                ListItemDeserializer()
+            ).create()
+        )
 
     @Provides
     @Singleton

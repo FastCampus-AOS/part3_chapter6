@@ -4,7 +4,7 @@ import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
-import fastcampus.aos.part3.part3_chapter6.MainService
+import fastcampus.aos.part3.part3_chapter6.remote.MainService
 import retrofit2.Retrofit
 import javax.inject.Singleton
 
