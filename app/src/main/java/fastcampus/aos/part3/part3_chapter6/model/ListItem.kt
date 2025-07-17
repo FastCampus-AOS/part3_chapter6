@@ -2,7 +2,7 @@ package fastcampus.aos.part3.part3_chapter6.model
 
 import java.io.Serializable
 
-interface ListItem: Serializable {
+interface ListItem : Serializable {
     val viewType: ViewType
 
     fun getKey() = hashCode()
