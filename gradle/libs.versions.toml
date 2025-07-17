@@ -24,6 +24,8 @@ androidx-activity-ktx = { group = "androidx.activity", name = "activity-ktx", ve
 hilt-android = { group = "com.google.dagger", name = "hilt-android", version.ref = "daggerHilt" }
 hilt-compiler = { group = "com.google.dagger", name = "hilt-compiler", version.ref = "daggerHilt" }
 
+coil = { group = "io.coil-kt", name = "coil", version = "2.2.2" }
+
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }

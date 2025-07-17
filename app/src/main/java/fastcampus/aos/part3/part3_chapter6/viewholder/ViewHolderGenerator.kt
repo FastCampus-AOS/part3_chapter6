@@ -4,6 +4,7 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.viewbinding.ViewBinding
 import fastcampus.aos.part3.part3_chapter6.databinding.ItemEmptyBinding
+import fastcampus.aos.part3.part3_chapter6.model.ViewType
 
 object ViewHolderGenerator {
 
@@ -12,7 +13,10 @@ object ViewHolderGenerator {
         viewType: Int
     ): BindingViewHolder<*> {
         return when (viewType) {
-            else -> ItemViewHolder(parent.toBinding())
+            ViewType.VIEW_PAGER.ordinal -> ViewPagerViewHolder(parent.toBinding())
+            ViewType.HORIZONTAL.ordinal -> ViewPagerViewHolder(parent.toBinding())
+            ViewType.FULL_AD.ordinal -> ViewPagerViewHolder(parent.toBinding())
+            else -> ItemViewHolder(parent.toBinding()) // EMPTY
         }
     }
 
