@@ -53,6 +53,11 @@ dependencies {
 
     implementation(libs.coil)
 
+    implementation(libs.okHttp)
+    implementation(libs.retrofit)
+    implementation(libs.gson)
+    implementation(libs.coroutine)
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
